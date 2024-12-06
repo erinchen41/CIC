@@ -1,0 +1,14 @@
+# https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html#id2
+version: 2
+
+build:
+  os: ubuntu-lts-latest
+  tools:
+    python: mambaforge-latest
+  # https://jupyterbook.org/en/stable/publish/readthedocs.html
+  jobs:
+    pre_build:
+      - jupyter-book config sphinx .
+
+conda:
+  environment: environment.yml
