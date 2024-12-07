@@ -1,5 +1,5 @@
 format: jb-book
 root: project_3
 chapters:
-  - file: project_2_new
+  - file: Project_2
   - file: Project_1_done
